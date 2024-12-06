@@ -23,7 +23,7 @@
         .botones { margin-top: 10px; }
         .botones button { margin-right: 5px; }
 
-        /* CSS de anterior web */
+        /* CSS de anterior */
 
         body, html {
             margin: 0;
@@ -96,7 +96,6 @@
 
     </style>
 
-    <!-- Carga de abrir pantalla -->
     <script>
 
         function abrirPantallaCompleta() {
@@ -133,30 +132,25 @@
 <body>
 
     <div id="contenedor">
-        <img id="imagen1" class="active" src="p1.jpg" alt="Imagen 1">
-        <img id="imagen2" src="p2.jpg" alt="Imagen 2">
+        <img id="imagen1" class="active" src="./p1.jpg" alt="Imagen 1">
+        <img id="imagen2" src="./p2.jpg" alt="Imagen 2">
     </div>
     
     <div class="button-container">
-        <!--
-        <button class="round-button" onclick="cambiarImagen(1)">1</button>
-        <button class="round-button" onclick="cambiarImagen(2)">2</button>
-        <button class="round-button" onclick="cambiarImagen(3)">3</button>
-        <button class="round-button" onclick="cambiarImagen(4)">4</button>
-        <button class="round-button" onclick="cambiarImagen(5)">5</button>
-        <button class="round-button" onclick="cambiarImagen(6)">6</button>
-        <button class="round-button" onclick="cambiarImagen(7)">7</button>
-        <button class="round-button" onclick="cambiarImagen(8)">8</button>
-        -->
 
-        <button class="round-button" onclick="cargarImagen('./p6.jpg')">1</button>
-        <button class="round-button" onclick="cargarImagen('./p7.jpg')">2</button>
-        <button class="round-button" onclick="cargarImagen('./p8.jpg')">3</button>
+        <button class="round-button" onclick="cargarImagen('./p1.jpg')">1</button>
+        <button class="round-button" onclick="cargarImagen('./p2.jpg')">2</button>
+        <button class="round-button" onclick="cargarImagen('./p3.jpg')">3</button>
+        <button class="round-button" onclick="cargarImagen('./p4.jpg')">4</button>
+        <button class="round-button" onclick="cargarImagen('./p5.jpg')">5</button>
 
-
+        <button class="round-button" onclick="cargarImagen('./p6.jpg')">6</button>
+        <button class="round-button" onclick="cargarImagen('./p7.jpg')">7</button>
+        <button class="round-button" onclick="cargarImagen('./p8.jpg')">8</button>
 
         <button class="round-button" onclick="abrirPantallaCompleta()">Full</button>
         <button class="round-button" onclick="cerrarPantallaCompleta()">Salir</button>
+
     </div>
 
     <script>
@@ -177,7 +171,7 @@
     
         function siguienteImagen() {
             if (cambioAutomatico) {
-                imagenActual = imagenActual % 4 + 1;
+                imagenActual = imagenActual % 8 + 1;
                 actualizarImagen();
             }
         }
@@ -199,7 +193,7 @@
     
         function iniciarCambioAutomatico() {
             clearInterval(intervalId);
-            intervalId = setInterval(siguienteImagen, 5000);
+            intervalId = setInterval(siguienteImagen, 10000);
         }
     
         function reiniciarTemporizadorInactividad() {
@@ -221,7 +215,5 @@
         });
     </script>
     
-    
-
 </body>
 </html>
