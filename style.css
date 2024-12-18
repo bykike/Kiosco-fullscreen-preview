@@ -1,0 +1,134 @@
+.fondo-imagen {
+    background-image: url('./imagenes/fondo-kiosco.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+.fondo-imagen-eventos {
+    background-image: url('./imagenes/eventos/fondo-eventos.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-eventos {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+.fondo-imagen-teatro {
+    background-image: url('./imagenes/eventos/fondo-teatro.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-teatro {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+/* Esto es para quitar */
+.img-reducida-butacas {
+    width: 250%;
+    height: auto;
+}
+
+
+.fondo-imagen-teatro-reserva-qr {
+    background-image: url('./imagenes/eventos/fondo-teatro-reserva-qr.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-teatro-reserva-qr {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+.img-reducida-teatro-reserva-qr {
+    width: 380%;
+    height: auto;
+}
+
+
+.fondo-imagen-gastronomia {
+    background-image: url('./imagenes/gastronomia/fondo-gastronomia.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-gastronomia {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
+.fondo-imagen-gastronomia-burguer {
+    background-image: url('./imagenes/gastronomia/fondo-gastronomia-burguer.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-gastronomia-burguer {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
+.btn-custom {
+    /* background-color: transparent;
+    border: 2px solid white;
+    color: white; */
+    border: 0px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:active {
+    transform: scale(0.95);
+    /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+.img-reducida {
+    width: 95%;
+    height: auto;
+}
