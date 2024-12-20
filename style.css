@@ -15,6 +15,43 @@
     }
 }
 
+.fondo-imagen-lugares-emblematicos {
+    background-image: url('./imagenes/lugares-emblematicos/fondo-lugares-emblematicos.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-lugares-emblematicos {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
+.fondo-imagen-lugares-emblematicos-santa-maria-magdalena {
+    background-image: url('./imagenes/lugares-emblematicos/fondo-lugares-emblematicos-santa-maria-magdalena.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-lugares-emblematicos-santa-maria-magdalena {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
+
 .fondo-imagen-eventos {
     background-image: url('./imagenes/eventos/fondo-eventos.jpg');
     background-size: cover;
@@ -49,11 +86,24 @@
     }
 }
 
-/* Esto es para quitar */
-.img-reducida-butacas {
-    width: 250%;
-    height: auto;
+
+.fondo-imagen-alojamientos {
+    background-image: url('./imagenes/alojamientos/fondo-alojamientos.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
 }
+
+@media (max-width: 786px) {
+    .fondo-imagen-alojamientos {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
 
 
 .fondo-imagen-teatro-reserva-qr {
@@ -99,6 +149,25 @@
 
 .fondo-imagen-gastronomia-burguer {
     background-image: url('./imagenes/gastronomia/fondo-gastronomia-burguer.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-gastronomia-burguer {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
+
+.fondo-imagen-gastronomia-burguer-turka {
+    background-image: url('./imagenes/gastronomia/fondo-gastronomia-burguer-turka.jpg');
     background-size: cover;
     background-position: center;
     width: 786px;
