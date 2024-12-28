@@ -141,7 +141,6 @@
         <button class="round-button" onclick="cargarImagen('./p3.jpg')">3</button>
         <button class="round-button" onclick="cargarImagen('./p4.jpg')">4</button>
         <button class="round-button" onclick="cargarImagen('./p5.jpg')">5</button>
-        <button class="round-button" onclick="cargarImagen('./p6.jpg')">6</button>
 
         <button class="round-button" onclick="abrirPantallaCompleta()">Full</button>
         <button class="round-button" onclick="cerrarPantallaCompleta()">Salir</button>
@@ -166,7 +165,7 @@
     
         function siguienteImagen() {
             if (cambioAutomatico) {
-                imagenActual = imagenActual % 6 + 1;
+                imagenActual = imagenActual % 5 + 1;
                 actualizarImagen();
             }
         }

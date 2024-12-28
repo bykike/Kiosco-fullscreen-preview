@@ -50,6 +50,39 @@
     }
 }
 
+.fondo-imagen-santuario-santamaria-magdalena-entrada-qr {
+    background-image: url('./imagenes/lugares-emblematicos/fondo-lugares-emblematicos-santa-maria-magdalena-QR.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-santuario-santamaria-magdalena-entrada-qr {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+.fondo-imagen-santuario-santamaria-magdalena-video-virtual {
+    background-image: url('./imagenes/lugares-emblematicos/fondo-lugares-emblematicos-santa-maria-magdalena-video.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 786px;
+    height: 1397px;
+    margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+    .fondo-imagen-santuario-santamaria-magdalena-video-virtual {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+}
 
 
 .fondo-imagen-eventos {
@@ -199,5 +232,10 @@
 
 .img-reducida {
     width: 95%;
+    height: auto;
+}
+
+.img-reducida-promocion {
+    width: 110%;
     height: auto;
 }
