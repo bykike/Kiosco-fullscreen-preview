@@ -8,7 +8,9 @@
     <link href="style.css" rel="stylesheet">
 
     <script>
+
         function abrirPantallaCompleta() {
+            alert("Hello world!");
             if (document.documentElement.requestFullscreen) {
                 document.documentElement.requestFullscreen();
             } else if (document.documentElement.mozRequestFullScreen) { // Firefox
@@ -19,16 +21,61 @@
                 document.documentElement.msRequestFullscreen();
             }
         }
+
+
+        document.addEventListener("fullscreenchange", function() {
+            if (!document.fullscreenElement) {
+                alert("Hello world!");
+                abrirPantallaCompleta();
+            }
+        });
+
     </script>
+
+    <style>
+        .position-relative {
+            position: relative;
+        }
+
+        .buttons-absolute {
+            position: absolute;
+            top: -100px; /* Ajusta según necesites */
+            right: 10px; /* Ajusta según necesites */
+            display: flex;
+        }
+
+        .btn-custom {
+            margin-left: 5px; /* Espacio entre botones */
+        }
+
+    </style>
 
 </head>
 
 <body>
     <div class="container-fluid fondo-imagen">
-
+        
         <div class="row">
             <div class="col-12 text-center mt-3">
                 <img src="./imagenes/logo-novelda.png" alt="Logo" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="position-relative">
+            <div class="buttons-absolute">
+
+                <a href="./info-1.html">
+                    <button class="btn btn-custom">
+                        <img src="./imagenes/info-1.png" style="width: 70px; margin-top: 10px;">
+                    </button>
+                </a>
+                <!--
+                <a href="./info-2.html">
+                    <button class="btn btn-custom">
+                        <img src="./imagenes/info-2.png" style="width: 70px; margin-top: 10px;">
+                    </button>
+                </a>
+                -->
             </div>
         </div>
 
@@ -80,21 +127,22 @@
 
         <div class="row mt-4">
 
-            <div class="col-4">
-
-            </div>
-
-            <div class="col-4">
+            <div class="col-6">
                 <!-- <a href="./alojamientos.html" onclick="abrirPantallaCompleta(); return false;"> -->
-                <a href="./index.html" >
+                <a href="./promos.html" >
                     <button class="btn btn-custom"> 
-                        <img src="./imagenes/Promocional.png" class="img-reducida-promocion">
+                        <img src="./imagenes/promocional.png" class="img-reducida">
                     </button>
                 </a>
             </div>
 
-            <div class="col-4">
-
+            <div class="col-6">
+                <!-- <a href="./alojamientos.html" onclick="abrirPantallaCompleta(); return false;"> -->
+                <a href="./index.html" >
+                    <button class="btn btn-custom"> 
+                        <img src="./imagenes/inicio.png" class="img-reducida">
+                    </button>
+                </a>
             </div>
 
         </div>
